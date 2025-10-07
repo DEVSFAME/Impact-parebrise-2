@@ -1,0 +1,92 @@
+/* Windshield Section */
+.windshield-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--background-white);
+}
+
+.windshield-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+}
+
+.windshield-image {
+    text-align: center;
+}
+
+.windshield-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-medium);
+}
+
+.windshield-text h2 {
+    color: var(--primary-color);
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+}
+
+.windshield-text p {
+    color: var(--text-light);
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-xl);
+}
+
+.expertise-highlights h3 {
+    color: var(--primary-color);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.highlights-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--background-light);
+    border-radius: var(--border-radius-md);
+    transition: all var(--transition-normal);
+}
+
+.highlight-item:hover {
+    background: #e8f5e8;
+    transform: translateY(-2px);
+}
+
+.highlight-item i {
+    color: var(--accent-color);
+    font-size: var(--font-size-2xl);
+    min-width: 24px;
+}
+
+.highlight-item span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .windshield-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .windshield-text {
+        text-align: center;
+    }
+    
+    .highlights-list {
+        grid-template-columns: 1fr;
+    }
+}
